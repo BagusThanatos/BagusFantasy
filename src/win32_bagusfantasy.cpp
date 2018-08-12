@@ -108,7 +108,9 @@ int       showCode )
     return 0;
 }
 #else
+#include <stdio.h>
 int main(){
+    printf("REPLACE THIS WITH SOMETHING REAL\n");
     return 0;
 }
 #endif
