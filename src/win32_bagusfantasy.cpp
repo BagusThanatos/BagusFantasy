@@ -1,3 +1,4 @@
+#if defined(_WIN64) || defined(_WIN32)
 #include <windows.h>
 
 static bool isRunning;
@@ -106,3 +107,8 @@ int       showCode )
     }
     return 0;
 }
+#else
+int main(){
+    return 0;
+}
+#endif
