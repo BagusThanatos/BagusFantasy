@@ -3,12 +3,10 @@
 
 static bool isRunning;
 
-LRESULT CALLBACK MainWindowCallback(
-HWND   windowHandle,
-UINT   message,
-WPARAM wParam,
-LPARAM lParam
-)
+LRESULT CALLBACK MainWindowCallback(HWND   windowHandle,
+                                    UINT   message,
+                                    WPARAM wParam,
+                                    LPARAM lParam)
 {
     LRESULT result = 0;
     
@@ -56,11 +54,10 @@ LPARAM lParam
     return(result);
 }
 
-int CALLBACK WinMain(
-HINSTANCE instance,
-HINSTANCE prevInstance,
-LPSTR     commmandLine,
-int       showCode )
+int CALLBACK WinMain(HINSTANCE instance,
+                     HINSTANCE prevInstance,
+                     LPSTR     commmandLine,
+                     int       showCode )
 {
     WNDCLASS windowClass = {};
     windowClass.style = CS_OWNDC;
