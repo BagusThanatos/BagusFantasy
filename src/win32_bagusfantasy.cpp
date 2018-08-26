@@ -67,7 +67,7 @@ int CALLBACK WinMain(HINSTANCE instance,
     windowClass.lpszClassName= "BagusFantasyWindowClass";
     
     if(RegisterClass(&windowClass)){
-        HWND windowHandle = 
+        HWND windowHandle =
             CreateWindowEx(
             0,
             windowClass.lpszClassName,
@@ -96,15 +96,17 @@ int CALLBACK WinMain(HINSTANCE instance,
             }
         }
         else{
-            //logging
+            // TODO(BAGUS): logging
         }
     }
     else{
-        //logging
+        // TODO(BAGUS): logging
     }
     return 0;
 }
 #else
+// NOTE(BAGUS): LINUX PART HERE
+
 #include <stdio.h>
 int main(){
     printf("REPLACE THIS WITH SOMETHING REAL\n");
